@@ -38,7 +38,7 @@
             document.documentElement &&
             document.documentElement.classList
             ) {
-        document.documentElement.classList.add("hidescrollbar");
+        
 
         window.addEventListener(
                 "load",
