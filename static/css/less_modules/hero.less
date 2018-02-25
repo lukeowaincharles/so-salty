@@ -1,0 +1,30 @@
+// home page hero styles
+
+.hero__gradient {
+    background: linear-gradient(to top right, @color-primary-1, @color-primary-2);
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:not(.flexbox) {
+        .logo__wrapper {
+            .absolute-center-x-y;
+        }
+    }
+    .logo__wrapper {
+        width: 150px;
+        @media @tablet {
+            width: 250px;
+        }
+        @media @desktop {
+            width: 400px;
+        }
+    }
+    .page__scroll {
+        color: #FFF;
+        position: absolute;
+        bottom: 20px;
+        
+    }
+}
