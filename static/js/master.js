@@ -173,7 +173,35 @@ window.onload = function () {
 
     //animation loop
     setInterval(draw, 33);
-}
+};
+
+(function ($) {
+// **************
+// ScrollAnchor --- Smooth scroll
+// **************
+    $('a[href*=#].scroll:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                var _st = target.offset().top;
+
+                $('html,body').animate({scrollTop: _st}, 1000);
+                return false;
+            }
+        }
+    });
+
+
+    $('[data-scroll]').on('click', function () {
+        var scrollAnchor = $(this).attr('data-scroll'),
+                scrollPoint = $('[data-anchor="' + scrollAnchor + '"]').offset().top - 30;
+        $('body,html').animate({
+            scrollTop: scrollPoint
+        }, 500);
+        return false;
+    });
+})(jQuery);
 
 
  
