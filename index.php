@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        
         <title>So Salty shop</title>
         <meta name="description" content="">
         
@@ -23,7 +24,7 @@
             <div class="logo__wrapper">
                 <img src="/static/img/logo-so-salty.svg" />
             </div>
-            <a href="#main-content" class="scroll page__scroll" id="">Scroll</a>
+            <a href="#main-content" class="scroll page__scroll" id="scroll">Scroll<i class="icon-angle-down"></i></a>
         </section>
 
         <main>
@@ -38,12 +39,13 @@
                     <p class="product__copy">Bright and vibrant "So Salty" A2 poster. Lighten up from being Salty (the act of being upset, angry or bitter) with this super fun poster.</p>
                     <p class="product__price">£12.99 <span>plus P&amp;P</span>
                     </p>
-                    <button>Buy now</button>
+                    <button><a href="/so-salty/public_html/purchase-page.php">Buy now</a></button>
                 </div>
             </section>
         </main>
 
         <footer>
+            <div class="container">
             <nav>
                 <ul>
                     <li><a href="#">Contact</a></li>
@@ -51,11 +53,12 @@
                     <li><a href="#">About</a></li>
                 </ul>
             </nav>
+            </div>
         </footer>
-
+        <canvas id="canvas"></canvas>
         <script src="/static/js/broozr.js"></script>
         <script src="/static/js/modernizr-custom.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="/static/ext/bootstrap/js/bootstrap.min.js"></script>
         <script src="/static/js/master.js"></script>
     </body>
