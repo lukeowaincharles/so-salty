@@ -46,19 +46,19 @@
             </div>
         </div>
 
-        <main>
+        <main class="purchase-page">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
                         <section class="product__summary__wrapper">
                             <img src="/static/img/poster-mockup.png" alt="So Salty Poster" />
-                            <ul>
-                                <li>Subtotal</li>
-                                <li>£12.99</li>
-                                <li>Shipping</li>
-                                <li>£10.75</li>
-                                <li>Total</li>
-                                <li>£23.74</li>
+                            <ul class="product__list">
+                                <li class="product__list--item">Subtotal</li>
+                                <li class="product__list--item">£12.99</li>
+                                <li class="product__list--item">Shipping</li>
+                                <li class="product__list--item">£10.75</li>
+                                <li class="product__list--item last">Total</li>
+                                <li class="product__list--item last">£23.74</li>
                             </ul>
                         </section>
                     </div>
@@ -66,7 +66,7 @@
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default basic__details--panel">
                                 <div class="panel-heading" role="tab" id="basics">
-                                    <h1 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#basicDetails" aria-expanded="true" aria-controls="basicDetails">The basics</a></h1>
+                                    <h3 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#basicDetails" aria-expanded="true" aria-controls="basicDetails">The basics</a></h3>
                                 </div>
                                 <div id="basicDetails" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="basics">
                                     <div class="panel-body">
@@ -125,7 +125,7 @@
                             </div>
                             <div class="panel panel-default shipping__details--panel">
                                 <div class="panel-heading" role="tab" id="shippingDetails">
-                                    <h1 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#shipDetails" aria-expanded="false" aria-controls="shipDetails">Shipping details</a></h1>
+                                    <h3 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#shipDetails" aria-expanded="false" aria-controls="shipDetails">Shipping details</a></h3>
                                 </div>
                                 <div id="shipDetails" class="panel-collapse collapse" role="tabpanel" aria-labelledby="shippingDetails">
                                     <div class="panel-body">
@@ -137,7 +137,7 @@
                             </div>
                             <div class="panel panel-default secure__payment--panel">
                                 <div class="panel-heading" role="tab" id="shippingDetails">
-                                    <h1 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#securePayment" aria-expanded="false" aria-controls="shipDetails">Secure payment</a></h1>
+                                    <h3 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#securePayment" aria-expanded="false" aria-controls="shipDetails">Secure payment</a></h3>
                                 </div>
                                 <div id="securePayment" class="panel-collapse collapse" role="tabpanel" aria-labelledby="securePayments">
                                     <div class="panel-body">
