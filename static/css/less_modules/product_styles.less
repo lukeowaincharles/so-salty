@@ -10,7 +10,8 @@
         margin-top: 130px;
     }
     .product__info__wrapper {
-        background-color: rgba(255, 27, 79, .05);
+        /*background-color: rgba(255, 27, 79, .05);*/
+        background-color: @color-primary-3;
         width: 414px;
         height: 495px;
         padding: 30px 25px 0;
@@ -87,8 +88,78 @@
             left: 50%;
             transform: translateX(-50%);
             width: 75%;
+            a {
+                color: rgba(247, 247, 247, 1.0);
+            }
         }
     }
 }
 
 /* END PRODUCT STYLING */
+
+.purchase-page {
+    margin-top: 15px;
+    @media @desktop {
+        margin-top: 45px;
+    }
+    .product__summary__wrapper {
+        background: @color-primary-3;
+        padding: 25px;
+        img {
+            width: 200px;
+            @media @tablet {
+                width: 275px;
+            }
+            @media @desktop {
+                width: 310px;
+            }
+        }
+        .product__list {
+            margin-top: 15px;
+            .product__list--item {
+                font-size: 12px;
+                margin-bottom: 8px;
+                display: inline-block;
+                width: calc(96% / 2);
+                &:nth-child(even) {
+                    text-align: right;
+                }
+                &.last {
+                    color: @color-primary-2;
+                }
+            }
+        }
+    }
+    .panel-group {
+
+        .panel {
+            background: @color-primary-3;
+            border: none;
+            border-radius: 0;
+            .panel-heading {
+                color: @color-primary-2;
+                background-color: @color-primary-3;
+                border: none;
+                background-image: none;
+                .panel-title {
+                    @media @desktop {
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .panel-body {
+                border-top: none;
+                .form-group {
+                    label {
+                        font-size: 12px;
+                        letter-spacing: 1.1px;
+                        color: @color-primary-2;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
