@@ -22,7 +22,7 @@
         </div>
         <section class="hero__gradient">
             <div class="logo__wrapper">
-                <img src="/static/img/logo-so-salty.svg" />
+                <img src="/static/img/logo-so-salty.svg" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500"  />
             </div>
             <a href="#main-content" class="scroll page__scroll" id="scroll">Scroll<i class="icon-angle-down"></i></a>
         </section>
@@ -60,6 +60,7 @@
         <script src="/static/js/modernizr-custom.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="/static/ext/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../public_html/static/js/vanilla-tilt.js"></script>
         <script src="/static/js/master.js"></script>
     </body>
 </html>
